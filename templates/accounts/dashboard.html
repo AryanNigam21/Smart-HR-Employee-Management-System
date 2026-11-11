@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Dashboard | Smart HR</title></head>
+<body>
+<h1>Smart HR Dashboard</h1>
+<p>Welcome, {{ request.user.get_full_name|default:request.user.username }}.</p>
+<p>Your assigned role: {{ request.user.role }}</p>
+<p>Use the Django admin to manage the initial records while workflows are developed.</p>
+<a href="{% url 'logout' %}">Log out</a>
+</body></html>

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Smart HR | Login</title></head>
+<body>
+<h1>Smart HR & Employee Management</h1>
+{% for message in messages %}<p>{{ message }}</p>{% endfor %}
+<form method="post">{% csrf_token %}
+<label>Username <input name="username" required></label><br>
+<label>Password <input name="password" type="password" required></label><br>
+<button type="submit">Sign in</button>
+</form></body></html>
